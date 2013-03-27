@@ -1,0 +1,192 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F6D7BE3E-672F-427D-87F0-2F4573BF82FE}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Wuqi.Webdiyer.AspNetPager</RootNamespace>
+    <AssemblyName>Wuqi.Webdiyer.AspNetPager</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="aspnetpager.cs" />
+    <Compile Include="Designer\AboutForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Designer\AboutForm.Designer.cs">
+      <DependentUpon>AboutForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Designer\CustomAttributes.cs" />
+    <Compile Include="Designer\CustomInfoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Designer\CustomInfoForm.Designer.cs">
+      <DependentUpon>CustomInfoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Designer\NavTextForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Designer\NavTextForm.Designer.cs">
+      <DependentUpon>NavTextForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Designer\PageIndexBoxForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Designer\PageIndexBoxForm.Designer.cs">
+      <DependentUpon>PageIndexBoxForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Designer\PagerDesigner.cs" />
+    <Compile Include="Designer\SPHelpForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Designer\SPHelpForm.Designer.cs">
+      <DependentUpon>SPHelpForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Designer\SPVarRegForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Designer\SPVarRegForm.Designer.cs">
+      <DependentUpon>SPVarRegForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Designer\StoredProcForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Designer\StoredProcForm.Designer.cs">
+      <DependentUpon>StoredProcForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Enumerations.cs" />
+    <Compile Include="Events.cs" />
+    <Compile Include="Helper.cs" />
+    <Compile Include="Methods.cs" />
+    <Compile Include="PageChangingEventArgs.cs" />
+    <Compile Include="PostBack.cs" />
+    <Compile Include="Properties.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="anp.gif" />
+    <Content Include="AspNetPager.bmp" />
+    <Content Include="AspNetPagerDocs.xml" />
+    <Content Include="Resources\aspnetpager.gif" />
+    <None Include="Resources\aspnetpager2.gif" />
+    <None Include="Resources\aspnetpager1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Designer\.svn\all-wcprops" />
+    <None Include="Designer\.svn\entries" />
+    <None Include="Designer\.svn\text-base\AboutForm.cs.svn-base" />
+    <None Include="Designer\.svn\text-base\AboutForm.Designer.cs.svn-base" />
+    <None Include="Designer\.svn\text-base\AboutForm.resx.svn-base" />
+    <None Include="Designer\.svn\text-base\CustomAttributes.cs.svn-base" />
+    <None Include="Designer\.svn\text-base\CustomInfoForm.cs.svn-base" />
+    <None Include="Designer\.svn\text-base\CustomInfoForm.Designer.cs.svn-base" />
+    <None Include="Designer\.svn\text-base\CustomInfoForm.resx.svn-base" />
+    <None Include="Designer\.svn\text-base\NavTextForm.cs.svn-base" />
+    <None Include="Designer\.svn\text-base\NavTextForm.Designer.cs.svn-base" />
+    <None Include="Designer\.svn\text-base\NavTextForm.resx.svn-base" />
+    <None Include="Designer\.svn\text-base\PageIndexBoxForm.cs.svn-base" />
+    <None Include="Designer\.svn\text-base\PageIndexBoxForm.Designer.cs.svn-base" />
+    <None Include="Designer\.svn\text-base\PageIndexBoxForm.resx.svn-base" />
+    <None Include="Designer\.svn\text-base\PagerDesigner.cs.svn-base" />
+    <None Include="Designer\.svn\text-base\SPHelpForm.cs.svn-base" />
+    <None Include="Designer\.svn\text-base\SPHelpForm.Designer.cs.svn-base" />
+    <None Include="Designer\.svn\text-base\SPHelpForm.resx.svn-base" />
+    <None Include="Designer\.svn\text-base\SPVarRegForm.cs.svn-base" />
+    <None Include="Designer\.svn\text-base\SPVarRegForm.Designer.cs.svn-base" />
+    <None Include="Designer\.svn\text-base\SPVarRegForm.resx.svn-base" />
+    <None Include="Designer\.svn\text-base\StoredProcForm.cs.svn-base" />
+    <None Include="Designer\.svn\text-base\StoredProcForm.Designer.cs.svn-base" />
+    <None Include="Designer\.svn\text-base\StoredProcForm.resx.svn-base" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AspNetPager.en.resx">
+      <DependentUpon>aspnetpager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AspNetPager.resx">
+      <DependentUpon>aspnetpager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AspNetPager.zh-CHT.resx">
+      <DependentUpon>aspnetpager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\AboutForm.resx">
+      <DependentUpon>AboutForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\CustomInfoForm.resx">
+      <DependentUpon>CustomInfoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\NavTextForm.resx">
+      <DependentUpon>NavTextForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\PageIndexBoxForm.resx">
+      <DependentUpon>PageIndexBoxForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\SPHelpForm.resx">
+      <DependentUpon>SPHelpForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\SPVarRegForm.resx">
+      <DependentUpon>SPVarRegForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\StoredProcForm.resx">
+      <DependentUpon>StoredProcForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Designer\.svn\prop-base\" />
+    <Folder Include="Designer\.svn\props\" />
+    <Folder Include="Designer\.svn\tmp\prop-base\" />
+    <Folder Include="Designer\.svn\tmp\props\" />
+    <Folder Include="Designer\.svn\tmp\text-base\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

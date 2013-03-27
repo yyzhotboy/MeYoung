@@ -1,0 +1,59 @@
+﻿@charset "utf-8";
+* {
+	margin:0 auto
+}
+
+body {
+	font-family:"微软雅黑", "宋体";
+	font-size:12px;
+	color:#333;
+
+}
+#main
+{
+   
+       height:100%;
+     width:540px;   
+     margin-top:20px;
+}
+.user_right_from 
+{
+    width:150px;
+	border:1px solid #cecece
+}
+.user_right_div {
+	width:240;
+	height:30px;
+}
+.user_right_detail
+{
+    
+	width:240;
+	height:90px;
+}
+.user_upfile
+{
+   
+    border:1px solid
+}
+
+.user_detail
+{
+     width:150px;
+	border:1px solid #cecece
+}
+
+.btn2_2, .btn2_4 {
+	background:url("../image/btn2.gif");
+	height:25px;
+	border:none;
+	cursor:pointer
+}
+.btn2_2 {
+	width:54px;
+	background-position:0px 0px
+}
+.btn2_4 {
+	width:86px;
+	background-position:0px -30px
+}

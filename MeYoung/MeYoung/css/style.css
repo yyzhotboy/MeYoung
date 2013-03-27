@@ -1,0 +1,252 @@
+@charset "utf-8";
+* {
+	margin:0 auto
+}
+
+body {
+	font-family:"微软雅黑", "宋体";
+	font-size:12px;
+	color:#333;
+
+}
+.top{
+    width:600px;  
+}
+.edge
+{
+     width:600px;  
+     height:3px;
+     background-color:#0174ab;
+}
+.head
+{
+     width:545px;
+     height:80px;
+}
+.logo
+{
+    width:147px;
+    height:48px;
+    background-image:url(../image/logo.png);
+    float:left;
+    margin-top:20px;
+    margin-left:3px;
+}
+.type{
+    width:540px;	
+	margin-top: 5px;   
+}
+.mapall{
+    width:190px;
+	height:280px;
+	float: left;
+}
+.fonttitle{
+	width:100%;
+	height:18px;
+	float: left;
+	margin-top:5px;
+}
+.fontstyle
+{
+    margin-bottom:0px;
+    font-size:14px;
+    font-weight:600;
+}
+.map{
+	width:190px;
+	height:260px;
+	float: left;
+	background-color:blue;
+	 margin-top:5px;
+}
+.youhui{
+    height:280px;
+    width:340px;
+    margin-left:5px;   
+    float: left;
+}
+
+.canyin
+{
+    height:170px;
+    width:110px;
+    float:left;
+    margin-left:0px;
+    background-color:#0174ab;
+    margin-top:5px;
+    background-image:url(../image/canyin.png) ;
+    cursor:pointer;
+}
+.canyin:hover
+{
+    height:170px;
+    width:110px;
+    float:left;
+    margin-left:0px;
+    background-color:#017666;
+    margin-top:5px;
+    background-image:url(../image/canyin.png) ;
+    cursor:pointer;
+}
+.qitatype
+{
+    height:83px;
+    width:110px;
+    float:left;
+    margin-left:5px;
+    margin-top:5px;
+    background-color:#0174ab;
+   
+}
+.qitatype:hover
+{
+    height:83px;
+    width:110px;
+    float:left;
+    margin-left:5px;
+    margin-top:5px;
+    background-color:#017666;
+    cursor:pointer;
+   
+}
+.gouwu
+{
+    height:83px;
+    width:110px;
+    float:left;
+    margin-left:0px;
+    margin-top:5px;
+    background-color:#0174ab;
+}
+.gouwu:hover
+{
+    height:83px;
+    width:110px;
+    float:left;
+    margin-left:0px;
+    margin-top:5px;
+    background-color:#018666;
+    cursor:pointer;
+}
+.clear
+{
+    clear:both;
+}
+.newyouhui
+{   
+     height:100%;
+     width:540px;   
+     margin-top:5px;
+    
+} 
+
+ .first_yh
+ {
+     width:190px;
+     height:83px;
+     margin-left:0px;
+     margin-top:5px;
+     background-color:#0174ab;
+     float:left;
+ }
+  .first_yh:hover
+ {
+     width:190px;
+     height:83px;
+     margin-left:0px;
+     margin-top:5px;
+     background-color:#019666;
+     float:left;
+     cursor:pointer;
+ }
+  .other_yh
+ {
+     width:110px;
+     height:83px;
+     margin-left:5px;
+     margin-top:5px;
+     background-color:#0174ab;
+     float:left;
+ }  
+   .other_yh:hover
+ {
+     width:110px;
+     height:83px;
+     margin-left:5px;
+     margin-top:5px;
+     background-color:#017766;
+     float:left;
+     cursor:pointer;
+ }  
+ .bottom{
+     height:100px;
+     width:600px;
+     background-color:Fuchsia;
+     margin-top:20px;
+}
+.typename
+{
+   float:right;
+   margin-right:15px;
+   margin-top:145px;
+   font-size:14px;  
+   height:20px;
+   color:White;
+  
+}
+.allowancemain
+{
+     height:100%;
+     width:540px;   
+     margin-top:20px;
+}
+.typecontent
+{
+    height:200px;
+     width:265px;   
+     margin-top:5px;
+     margin-right:5px;
+     float:left;
+}
+.allowanceimg
+{
+    height:165px;
+    width:265px;
+}
+.imgtitle
+{
+    font-size:14px;
+     width:265px;
+       height:100%;
+}
+/*分页样式开始*/
+.pages {color: #999; width:880px; padding-left:100px; clear:both; height:100px; padding-top:20px; }
+.pages a, .pages .cpb { text-decoration:none; padding:8px 15px;  font-size:14px; color:#000; float:left;}
+.pages a:hover { background-color: #f95110; color:#fff;border:0px solid #E61636; text-decoration:none; border-bottom:1px solid #cecece;}
+.pages .cpb { font-weight: bold; color: #fff; background: #f95110; border-bottom:1px solid #cecece; float:left;}
+#Pager_btn
+{
+    border:0;
+	color:#fff;
+	cursor:pointer;
+	background-color:#f95110; padding:3px 10px; margin-left:10px;
+}
+
+.previous_page, .next_page, .next_page:hover, .previous_page:hover
+{
+   background-image: url(../image/page.gif);
+   width:85px; height:40px; 
+   display:block;   float:left; cursor:pointer; 
+  
+   
+}
+.page_num{ background:#fff;border-bottom:1px solid #cecece; }
+.previous_page, .next_page{ padding:0px; margin:0px;}
+.previous_page:hover{background-position:0px -52px;}
+.next_page:hover{background-position:0px -164px;}
+.next_page{ background-position:0px -109px;}
+/*分页样式结束*/
+
+
+	

@@ -1,0 +1,513 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{46D291AD-D4DB-48E8-AAED-32236EB8DCBE}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MeYoung</RootNamespace>
+    <AssemblyName>MeYoung</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxPro.2, Version=6.10.6.1, Culture=neutral, PublicKeyToken=4735ae9824c7d3ec, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>dll\AjaxPro.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="css\login.css" />
+    <Content Include="css\map.css" />
+    <Content Include="css\style.css" />
+    <Content Include="css\usercenter.css" />
+    <Content Include="dll\AjaxPro.2.dll" />
+    <Content Include="Global.asax" />
+    <Content Include="image\btn2.gif" />
+    <Content Include="image\canyin.png" />
+    <Content Include="image\logo.png" />
+    <Content Include="image\nav.png" />
+    <Content Include="image\商铺.png" />
+    <Content Include="Index.aspx" />
+    <Content Include="js\Edit\jquery\jquery-1.4.4.min.js" />
+    <Content Include="js\Edit\jquery\jquery-1.4.4.src.js" />
+    <Content Include="js\Edit\xheditor-1.1.11-zh-cn.min.js" />
+    <Content Include="js\Edit\xheditor-1.1.12-zh-cn.min.js" />
+    <Content Include="js\Edit\xheditor_emot\default\angry.gif" />
+    <Content Include="js\Edit\xheditor_emot\default\awkward.gif" />
+    <Content Include="js\Edit\xheditor_emot\default\bye.gif" />
+    <Content Include="js\Edit\xheditor_emot\default\config.txt" />
+    <Content Include="js\Edit\xheditor_emot\default\crazy.gif" />
+    <Content Include="js\Edit\xheditor_emot\default\cry.gif" />
+    <Content Include="js\Edit\xheditor_emot\default\curse.gif" />
+    <Content Include="js\Edit\xheditor_emot\default\cute.gif" />
+    <Content Include="js\Edit\xheditor_emot\default\despise.gif" />
+    <Content Include="js\Edit\xheditor_emot\default\doubt.gif" />
+    <Content Include="js\Edit\xheditor_emot\default\envy.gif" />
+    <Content Include="js\Edit\xheditor_emot\default\fastcry.gif" />
+    <Content Include="js\Edit\xheditor_emot\default\knock.gif" />
+    <Content Include="js\Edit\xheditor_emot\default\laugh.gif" />
+    <Content Include="js\Edit\xheditor_emot\default\mad.gif" />
+    <Content Include="js\Edit\xheditor_emot\default\ohmy.gif" />
+    <Content Include="js\Edit\xheditor_emot\default\panic.gif" />
+    <Content Include="js\Edit\xheditor_emot\default\proud.gif" />
+    <Content Include="js\Edit\xheditor_emot\default\quiet.gif" />
+    <Content Include="js\Edit\xheditor_emot\default\sad.gif" />
+    <Content Include="js\Edit\xheditor_emot\default\shutup.gif" />
+    <Content Include="js\Edit\xheditor_emot\default\shy.gif" />
+    <Content Include="js\Edit\xheditor_emot\default\sleep.gif" />
+    <Content Include="js\Edit\xheditor_emot\default\smile.gif" />
+    <Content Include="js\Edit\xheditor_emot\default\struggle.gif" />
+    <Content Include="js\Edit\xheditor_emot\default\titter.gif" />
+    <Content Include="js\Edit\xheditor_emot\default\tongue.gif" />
+    <Content Include="js\Edit\xheditor_emot\default\wail.gif" />
+    <Content Include="js\Edit\xheditor_emot\default\wronged.gif" />
+    <Content Include="js\Edit\xheditor_emot\ipb\alien.gif" />
+    <Content Include="js\Edit\xheditor_emot\ipb\angel.gif" />
+    <Content Include="js\Edit\xheditor_emot\ipb\angry.gif" />
+    <Content Include="js\Edit\xheditor_emot\ipb\bandit.gif" />
+    <Content Include="js\Edit\xheditor_emot\ipb\biglaugh.gif" />
+    <Content Include="js\Edit\xheditor_emot\ipb\blink.gif" />
+    <Content Include="js\Edit\xheditor_emot\ipb\blush.gif" />
+    <Content Include="js\Edit\xheditor_emot\ipb\config.txt" />
+    <Content Include="js\Edit\xheditor_emot\ipb\cool.gif" />
+    <Content Include="js\Edit\xheditor_emot\ipb\cry.gif" />
+    <Content Include="js\Edit\xheditor_emot\ipb\depres.gif" />
+    <Content Include="js\Edit\xheditor_emot\ipb\devil.gif" />
+    <Content Include="js\Edit\xheditor_emot\ipb\glare.gif" />
+    <Content Include="js\Edit\xheditor_emot\ipb\heart.gif" />
+    <Content Include="js\Edit\xheditor_emot\ipb\joyful.gif" />
+    <Content Include="js\Edit\xheditor_emot\ipb\kiss.gif" />
+    <Content Include="js\Edit\xheditor_emot\ipb\laugh.gif" />
+    <Content Include="js\Edit\xheditor_emot\ipb\magician.gif" />
+    <Content Include="js\Edit\xheditor_emot\ipb\ninja.gif" />
+    <Content Include="js\Edit\xheditor_emot\ipb\pinch.gif" />
+    <Content Include="js\Edit\xheditor_emot\ipb\police.gif" />
+    <Content Include="js\Edit\xheditor_emot\ipb\sad.gif" />
+    <Content Include="js\Edit\xheditor_emot\ipb\sick.gif" />
+    <Content Include="js\Edit\xheditor_emot\ipb\sideways.gif" />
+    <Content Include="js\Edit\xheditor_emot\ipb\sleep.gif" />
+    <Content Include="js\Edit\xheditor_emot\ipb\smile.gif" />
+    <Content Include="js\Edit\xheditor_emot\ipb\surprised.gif" />
+    <Content Include="js\Edit\xheditor_emot\ipb\tongue.gif" />
+    <Content Include="js\Edit\xheditor_emot\ipb\unsure.gif" />
+    <Content Include="js\Edit\xheditor_emot\ipb\w00t.gif" />
+    <Content Include="js\Edit\xheditor_emot\ipb\whistling.gif" />
+    <Content Include="js\Edit\xheditor_emot\ipb\wondering.gif" />
+    <Content Include="js\Edit\xheditor_emot\ipb\wub.gif" />
+    <Content Include="js\Edit\xheditor_emot\msn\1.gif" />
+    <Content Include="js\Edit\xheditor_emot\msn\10.gif" />
+    <Content Include="js\Edit\xheditor_emot\msn\11.gif" />
+    <Content Include="js\Edit\xheditor_emot\msn\12.gif" />
+    <Content Include="js\Edit\xheditor_emot\msn\13.gif" />
+    <Content Include="js\Edit\xheditor_emot\msn\14.gif" />
+    <Content Include="js\Edit\xheditor_emot\msn\15.gif" />
+    <Content Include="js\Edit\xheditor_emot\msn\16.gif" />
+    <Content Include="js\Edit\xheditor_emot\msn\17.gif" />
+    <Content Include="js\Edit\xheditor_emot\msn\18.gif" />
+    <Content Include="js\Edit\xheditor_emot\msn\19.gif" />
+    <Content Include="js\Edit\xheditor_emot\msn\2.gif" />
+    <Content Include="js\Edit\xheditor_emot\msn\20.gif" />
+    <Content Include="js\Edit\xheditor_emot\msn\21.gif" />
+    <Content Include="js\Edit\xheditor_emot\msn\22.gif" />
+    <Content Include="js\Edit\xheditor_emot\msn\23.gif" />
+    <Content Include="js\Edit\xheditor_emot\msn\24.gif" />
+    <Content Include="js\Edit\xheditor_emot\msn\25.gif" />
+    <Content Include="js\Edit\xheditor_emot\msn\26.gif" />
+    <Content Include="js\Edit\xheditor_emot\msn\27.gif" />
+    <Content Include="js\Edit\xheditor_emot\msn\28.gif" />
+    <Content Include="js\Edit\xheditor_emot\msn\29.gif" />
+    <Content Include="js\Edit\xheditor_emot\msn\3.gif" />
+    <Content Include="js\Edit\xheditor_emot\msn\30.gif" />
+    <Content Include="js\Edit\xheditor_emot\msn\31.gif" />
+    <Content Include="js\Edit\xheditor_emot\msn\32.gif" />
+    <Content Include="js\Edit\xheditor_emot\msn\33.gif" />
+    <Content Include="js\Edit\xheditor_emot\msn\34.gif" />
+    <Content Include="js\Edit\xheditor_emot\msn\35.gif" />
+    <Content Include="js\Edit\xheditor_emot\msn\36.gif" />
+    <Content Include="js\Edit\xheditor_emot\msn\37.gif" />
+    <Content Include="js\Edit\xheditor_emot\msn\38.gif" />
+    <Content Include="js\Edit\xheditor_emot\msn\39.gif" />
+    <Content Include="js\Edit\xheditor_emot\msn\4.gif" />
+    <Content Include="js\Edit\xheditor_emot\msn\40.gif" />
+    <Content Include="js\Edit\xheditor_emot\msn\5.gif" />
+    <Content Include="js\Edit\xheditor_emot\msn\6.gif" />
+    <Content Include="js\Edit\xheditor_emot\msn\7.gif" />
+    <Content Include="js\Edit\xheditor_emot\msn\8.gif" />
+    <Content Include="js\Edit\xheditor_emot\msn\9.gif" />
+    <Content Include="js\Edit\xheditor_emot\pidgin\angry.gif" />
+    <Content Include="js\Edit\xheditor_emot\pidgin\bad.gif" />
+    <Content Include="js\Edit\xheditor_emot\pidgin\blush.gif" />
+    <Content Include="js\Edit\xheditor_emot\pidgin\brokenheart.gif" />
+    <Content Include="js\Edit\xheditor_emot\pidgin\bye.gif" />
+    <Content Include="js\Edit\xheditor_emot\pidgin\coffee.gif" />
+    <Content Include="js\Edit\xheditor_emot\pidgin\config.txt" />
+    <Content Include="js\Edit\xheditor_emot\pidgin\cool.gif" />
+    <Content Include="js\Edit\xheditor_emot\pidgin\cry.gif" />
+    <Content Include="js\Edit\xheditor_emot\pidgin\curse.gif" />
+    <Content Include="js\Edit\xheditor_emot\pidgin\cute.gif" />
+    <Content Include="js\Edit\xheditor_emot\pidgin\devil.gif" />
+    <Content Include="js\Edit\xheditor_emot\pidgin\envy.gif" />
+    <Content Include="js\Edit\xheditor_emot\pidgin\gift.gif" />
+    <Content Include="js\Edit\xheditor_emot\pidgin\good.gif" />
+    <Content Include="js\Edit\xheditor_emot\pidgin\kiss.gif" />
+    <Content Include="js\Edit\xheditor_emot\pidgin\laugh.gif" />
+    <Content Include="js\Edit\xheditor_emot\pidgin\love.gif" />
+    <Content Include="js\Edit\xheditor_emot\pidgin\music.gif" />
+    <Content Include="js\Edit\xheditor_emot\pidgin\question.gif" />
+    <Content Include="js\Edit\xheditor_emot\pidgin\rose.gif" />
+    <Content Include="js\Edit\xheditor_emot\pidgin\sad.gif" />
+    <Content Include="js\Edit\xheditor_emot\pidgin\shocked.gif" />
+    <Content Include="js\Edit\xheditor_emot\pidgin\shout.gif" />
+    <Content Include="js\Edit\xheditor_emot\pidgin\sick.gif" />
+    <Content Include="js\Edit\xheditor_emot\pidgin\sleepy.gif" />
+    <Content Include="js\Edit\xheditor_emot\pidgin\smile.gif" />
+    <Content Include="js\Edit\xheditor_emot\pidgin\soccer.gif" />
+    <Content Include="js\Edit\xheditor_emot\pidgin\sweat.gif" />
+    <Content Include="js\Edit\xheditor_emot\pidgin\tired.gif" />
+    <Content Include="js\Edit\xheditor_emot\pidgin\tongue.gif" />
+    <Content Include="js\Edit\xheditor_emot\pidgin\victory.gif" />
+    <Content Include="js\Edit\xheditor_emot\pidgin\wink.gif" />
+    <Content Include="js\Edit\xheditor_plugins\multiupload\img\add.gif" />
+    <Content Include="js\Edit\xheditor_plugins\multiupload\img\bg1.gif" />
+    <Content Include="js\Edit\xheditor_plugins\multiupload\img\bg2.gif" />
+    <Content Include="js\Edit\xheditor_plugins\multiupload\img\btnbg.gif" />
+    <Content Include="js\Edit\xheditor_plugins\multiupload\img\btnbgr.gif" />
+    <Content Include="js\Edit\xheditor_plugins\multiupload\img\clear.gif" />
+    <Content Include="js\Edit\xheditor_plugins\multiupload\img\progressbg.gif" />
+    <Content Include="js\Edit\xheditor_plugins\multiupload\img\start.gif" />
+    <Content Include="js\Edit\xheditor_plugins\multiupload\multiupload.css" />
+    <Content Include="js\Edit\xheditor_plugins\multiupload\multiupload.html" />
+    <Content Include="js\Edit\xheditor_plugins\multiupload\multiupload.js" />
+    <Content Include="js\Edit\xheditor_plugins\multiupload\swfupload\swfupload.js" />
+    <Content Include="js\Edit\xheditor_plugins\multiupload\swfupload\swfupload.swf" />
+    <Content Include="js\Edit\xheditor_plugins\ubb.min.js" />
+    <Content Include="js\Edit\xheditor_skin\default\iframe.css" />
+    <Content Include="js\Edit\xheditor_skin\default\img\anchor.gif" />
+    <Content Include="js\Edit\xheditor_skin\default\img\close.gif" />
+    <Content Include="js\Edit\xheditor_skin\default\img\flash.gif" />
+    <Content Include="js\Edit\xheditor_skin\default\img\icons.gif" />
+    <Content Include="js\Edit\xheditor_skin\default\img\loading.gif" />
+    <Content Include="js\Edit\xheditor_skin\default\img\progress.gif" />
+    <Content Include="js\Edit\xheditor_skin\default\img\progressbg.gif" />
+    <Content Include="js\Edit\xheditor_skin\default\img\tag-address.gif" />
+    <Content Include="js\Edit\xheditor_skin\default\img\tag-div.gif" />
+    <Content Include="js\Edit\xheditor_skin\default\img\tag-h1.gif" />
+    <Content Include="js\Edit\xheditor_skin\default\img\tag-h2.gif" />
+    <Content Include="js\Edit\xheditor_skin\default\img\tag-h3.gif" />
+    <Content Include="js\Edit\xheditor_skin\default\img\tag-h4.gif" />
+    <Content Include="js\Edit\xheditor_skin\default\img\tag-h5.gif" />
+    <Content Include="js\Edit\xheditor_skin\default\img\tag-h6.gif" />
+    <Content Include="js\Edit\xheditor_skin\default\img\tag-p.gif" />
+    <Content Include="js\Edit\xheditor_skin\default\img\tag-pre.gif" />
+    <Content Include="js\Edit\xheditor_skin\default\img\waiting.gif" />
+    <Content Include="js\Edit\xheditor_skin\default\img\wmp.gif" />
+    <Content Include="js\Edit\xheditor_skin\default\ui.css" />
+    <Content Include="js\Edit\xheditor_skin\nostyle\iframe.css" />
+    <Content Include="js\Edit\xheditor_skin\nostyle\img\anchor.gif" />
+    <Content Include="js\Edit\xheditor_skin\nostyle\img\close.gif" />
+    <Content Include="js\Edit\xheditor_skin\nostyle\img\flash.gif" />
+    <Content Include="js\Edit\xheditor_skin\nostyle\img\icons.gif" />
+    <Content Include="js\Edit\xheditor_skin\nostyle\img\loading.gif" />
+    <Content Include="js\Edit\xheditor_skin\nostyle\img\progress.gif" />
+    <Content Include="js\Edit\xheditor_skin\nostyle\img\progressbg.gif" />
+    <Content Include="js\Edit\xheditor_skin\nostyle\img\tag-address.gif" />
+    <Content Include="js\Edit\xheditor_skin\nostyle\img\tag-div.gif" />
+    <Content Include="js\Edit\xheditor_skin\nostyle\img\tag-h1.gif" />
+    <Content Include="js\Edit\xheditor_skin\nostyle\img\tag-h2.gif" />
+    <Content Include="js\Edit\xheditor_skin\nostyle\img\tag-h3.gif" />
+    <Content Include="js\Edit\xheditor_skin\nostyle\img\tag-h4.gif" />
+    <Content Include="js\Edit\xheditor_skin\nostyle\img\tag-h5.gif" />
+    <Content Include="js\Edit\xheditor_skin\nostyle\img\tag-h6.gif" />
+    <Content Include="js\Edit\xheditor_skin\nostyle\img\tag-p.gif" />
+    <Content Include="js\Edit\xheditor_skin\nostyle\img\tag-pre.gif" />
+    <Content Include="js\Edit\xheditor_skin\nostyle\img\waiting.gif" />
+    <Content Include="js\Edit\xheditor_skin\nostyle\img\wmp.gif" />
+    <Content Include="js\Edit\xheditor_skin\nostyle\ui.css" />
+    <Content Include="js\Edit\xheditor_skin\o2007blue\iframe.css" />
+    <Content Include="js\Edit\xheditor_skin\o2007blue\img\anchor.gif" />
+    <Content Include="js\Edit\xheditor_skin\o2007blue\img\buttonbg.gif" />
+    <Content Include="js\Edit\xheditor_skin\o2007blue\img\close.gif" />
+    <Content Include="js\Edit\xheditor_skin\o2007blue\img\flash.gif" />
+    <Content Include="js\Edit\xheditor_skin\o2007blue\img\icons.gif" />
+    <Content Include="js\Edit\xheditor_skin\o2007blue\img\loading.gif" />
+    <Content Include="js\Edit\xheditor_skin\o2007blue\img\progress.gif" />
+    <Content Include="js\Edit\xheditor_skin\o2007blue\img\progressbg.gif" />
+    <Content Include="js\Edit\xheditor_skin\o2007blue\img\tag-address.gif" />
+    <Content Include="js\Edit\xheditor_skin\o2007blue\img\tag-div.gif" />
+    <Content Include="js\Edit\xheditor_skin\o2007blue\img\tag-h1.gif" />
+    <Content Include="js\Edit\xheditor_skin\o2007blue\img\tag-h2.gif" />
+    <Content Include="js\Edit\xheditor_skin\o2007blue\img\tag-h3.gif" />
+    <Content Include="js\Edit\xheditor_skin\o2007blue\img\tag-h4.gif" />
+    <Content Include="js\Edit\xheditor_skin\o2007blue\img\tag-h5.gif" />
+    <Content Include="js\Edit\xheditor_skin\o2007blue\img\tag-h6.gif" />
+    <Content Include="js\Edit\xheditor_skin\o2007blue\img\tag-p.gif" />
+    <Content Include="js\Edit\xheditor_skin\o2007blue\img\tag-pre.gif" />
+    <Content Include="js\Edit\xheditor_skin\o2007blue\img\waiting.gif" />
+    <Content Include="js\Edit\xheditor_skin\o2007blue\img\wmp.gif" />
+    <Content Include="js\Edit\xheditor_skin\o2007blue\ui.css" />
+    <Content Include="js\Edit\xheditor_skin\o2007silver\iframe.css" />
+    <Content Include="js\Edit\xheditor_skin\o2007silver\img\anchor.gif" />
+    <Content Include="js\Edit\xheditor_skin\o2007silver\img\buttonbg.gif" />
+    <Content Include="js\Edit\xheditor_skin\o2007silver\img\close.gif" />
+    <Content Include="js\Edit\xheditor_skin\o2007silver\img\flash.gif" />
+    <Content Include="js\Edit\xheditor_skin\o2007silver\img\icons.gif" />
+    <Content Include="js\Edit\xheditor_skin\o2007silver\img\loading.gif" />
+    <Content Include="js\Edit\xheditor_skin\o2007silver\img\progress.gif" />
+    <Content Include="js\Edit\xheditor_skin\o2007silver\img\progressbg.gif" />
+    <Content Include="js\Edit\xheditor_skin\o2007silver\img\tag-address.gif" />
+    <Content Include="js\Edit\xheditor_skin\o2007silver\img\tag-div.gif" />
+    <Content Include="js\Edit\xheditor_skin\o2007silver\img\tag-h1.gif" />
+    <Content Include="js\Edit\xheditor_skin\o2007silver\img\tag-h2.gif" />
+    <Content Include="js\Edit\xheditor_skin\o2007silver\img\tag-h3.gif" />
+    <Content Include="js\Edit\xheditor_skin\o2007silver\img\tag-h4.gif" />
+    <Content Include="js\Edit\xheditor_skin\o2007silver\img\tag-h5.gif" />
+    <Content Include="js\Edit\xheditor_skin\o2007silver\img\tag-h6.gif" />
+    <Content Include="js\Edit\xheditor_skin\o2007silver\img\tag-p.gif" />
+    <Content Include="js\Edit\xheditor_skin\o2007silver\img\tag-pre.gif" />
+    <Content Include="js\Edit\xheditor_skin\o2007silver\img\waiting.gif" />
+    <Content Include="js\Edit\xheditor_skin\o2007silver\img\wmp.gif" />
+    <Content Include="js\Edit\xheditor_skin\o2007silver\ui.css" />
+    <Content Include="js\Edit\xheditor_skin\vista\iframe.css" />
+    <Content Include="js\Edit\xheditor_skin\vista\img\anchor.gif" />
+    <Content Include="js\Edit\xheditor_skin\vista\img\buttonbg.gif" />
+    <Content Include="js\Edit\xheditor_skin\vista\img\close.gif" />
+    <Content Include="js\Edit\xheditor_skin\vista\img\flash.gif" />
+    <Content Include="js\Edit\xheditor_skin\vista\img\icons.gif" />
+    <Content Include="js\Edit\xheditor_skin\vista\img\loading.gif" />
+    <Content Include="js\Edit\xheditor_skin\vista\img\progress.gif" />
+    <Content Include="js\Edit\xheditor_skin\vista\img\progressbg.gif" />
+    <Content Include="js\Edit\xheditor_skin\vista\img\tag-address.gif" />
+    <Content Include="js\Edit\xheditor_skin\vista\img\tag-div.gif" />
+    <Content Include="js\Edit\xheditor_skin\vista\img\tag-h1.gif" />
+    <Content Include="js\Edit\xheditor_skin\vista\img\tag-h2.gif" />
+    <Content Include="js\Edit\xheditor_skin\vista\img\tag-h3.gif" />
+    <Content Include="js\Edit\xheditor_skin\vista\img\tag-h4.gif" />
+    <Content Include="js\Edit\xheditor_skin\vista\img\tag-h5.gif" />
+    <Content Include="js\Edit\xheditor_skin\vista\img\tag-h6.gif" />
+    <Content Include="js\Edit\xheditor_skin\vista\img\tag-p.gif" />
+    <Content Include="js\Edit\xheditor_skin\vista\img\tag-pre.gif" />
+    <Content Include="js\Edit\xheditor_skin\vista\img\titlebg.gif" />
+    <Content Include="js\Edit\xheditor_skin\vista\img\waiting.gif" />
+    <Content Include="js\Edit\xheditor_skin\vista\img\wmp.gif" />
+    <Content Include="js\Edit\xheditor_skin\vista\ui.css" />
+    <Content Include="js\jquery1.7.1.min.js" />
+    <Content Include="js\My97\calendar.js" />
+    <Content Include="js\My97\config.js" />
+    <Content Include="js\My97\lang\en.js" />
+    <Content Include="js\My97\lang\zh-cn.js" />
+    <Content Include="js\My97\lang\zh-tw.js" />
+    <Content Include="js\My97\My97DatePicker.htm" />
+    <Content Include="js\My97\skin\blueFresh\datepicker.css" />
+    <Content Include="js\My97\skin\blueFresh\img.gif" />
+    <Content Include="js\My97\skin\datePicker.gif" />
+    <Content Include="js\My97\skin\WdatePicker.css" />
+    <Content Include="js\My97\toolbar.gif" />
+    <Content Include="js\My97\WdatePicker.js" />
+    <Content Include="Map\MapPoint.aspx" />
+    <Content Include="Type\Allowance.aspx" />
+    <Content Include="UserCenter\AddCompany.aspx" />
+    <Content Include="UserCenter\AddCoupon.aspx" />
+    <Content Include="UserCenter\AddMail.aspx" />
+    <Content Include="UserCenter\AddShop.aspx" />
+    <Content Include="UserCenter\Infocenter.aspx" />
+    <Content Include="UserControl\Footer.ascx" />
+    <Content Include="UserControl\Header.ascx" />
+    <Content Include="User\imagesRead.aspx" />
+    <Content Include="User\Login.aspx" />
+    <Content Include="User\Regedit.aspx" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Map\MapPoint.aspx.cs">
+      <DependentUpon>MapPoint.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Map\MapPoint.aspx.designer.cs">
+      <DependentUpon>MapPoint.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Type\Allowance.aspx.cs">
+      <DependentUpon>Allowance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Type\Allowance.aspx.designer.cs">
+      <DependentUpon>Allowance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserCenter\AddCompany.aspx.cs">
+      <DependentUpon>AddCompany.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserCenter\AddCompany.aspx.designer.cs">
+      <DependentUpon>AddCompany.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserCenter\AddCoupon.aspx.cs">
+      <DependentUpon>AddCoupon.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserCenter\AddCoupon.aspx.designer.cs">
+      <DependentUpon>AddCoupon.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserCenter\AddMail.aspx.cs">
+      <DependentUpon>AddMail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserCenter\AddMail.aspx.designer.cs">
+      <DependentUpon>AddMail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserCenter\AddShop.aspx.cs">
+      <DependentUpon>AddShop.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserCenter\AddShop.aspx.designer.cs">
+      <DependentUpon>AddShop.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserCenter\Infocenter.aspx.cs">
+      <DependentUpon>Infocenter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserCenter\Infocenter.aspx.designer.cs">
+      <DependentUpon>Infocenter.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\Footer.ascx.cs">
+      <DependentUpon>Footer.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControl\Footer.ascx.designer.cs">
+      <DependentUpon>Footer.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\Header.ascx.cs">
+      <DependentUpon>Header.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControl\Header.ascx.designer.cs">
+      <DependentUpon>Header.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="User\imagesRead.aspx.cs">
+      <DependentUpon>imagesRead.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\imagesRead.aspx.designer.cs">
+      <DependentUpon>imagesRead.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\Regedit.aspx.cs">
+      <DependentUpon>Regedit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\Regedit.aspx.designer.cs">
+      <DependentUpon>Regedit.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="UserImage\CompanyImg\" />
+    <Folder Include="UserImage\CouponImage\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{1E93FAA5-F845-42AD-88B7-55F0BF856588}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MeYoung.BLL\MeYoung.BLL.csproj">
+      <Project>{024AFAF5-8996-4C10-8C7D-026C29CBF384}</Project>
+      <Name>MeYoung.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MeYoung.Model\MeYoung.Model.csproj">
+      <Project>{3CA521B8-A65C-4006-BDB5-CC7416580FA3}</Project>
+      <Name>MeYoung.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Wuqi.Webdiyer.AspNetPager\Wuqi.Webdiyer.AspNetPager.csproj">
+      <Project>{F6D7BE3E-672F-427D-87F0-2F4573BF82FE}</Project>
+      <Name>Wuqi.Webdiyer.AspNetPager</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>False</AutoAssignPort>
+          <DevelopmentServerPort>5188</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
